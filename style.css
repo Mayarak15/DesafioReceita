@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+   
+}
+* p{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: start;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    width: 100%;
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.img_omelette_computer{
+    width: 100%;
+    border-radius: .5rem;
+}
+.img_omelette_phone{
+    display: none;
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);   
+}
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(14, 45%, 36%);
+}
+.preparation_time, .list_time li{
+    color: hsl(332, 51%, 32%);
+
+}
+.list_time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    padding-left: 1.5rem;
+}
+.time{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+.li_p{
+    color: black;
+    margin-left: .5rem;
+}
+.list_ingredients, .list_instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    padding-left: 1.5rem;
+    color: hsl(14, 45%, 36%);
+}
+.ingredients, .instructions{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.list_instructions li::marker{
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+table{
+    text-align: start;
+    border-spacing: 0;
+}
+table th{
+    color: hsl(14, 45%, 36%);
+}
+table td, table th {
+    padding: .5rem 0 .5rem 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.borda_remove{
+    border: none;
+}
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+    }
+    main{
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        border-radius: 0;
+    }
+    .img_omelette_computer{
+        display: none;
+    }
+    .img_omelette_phone{
+        display: block;
+        width: 100%;
+    }
+  }
